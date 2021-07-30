@@ -9,6 +9,12 @@ trigger:
   paths:
     include:
       - sdk/boms/
+    exclude:
+      - sdk/boms/pom.xml
+      - sdk/boms/azure-sdk-bom/pom.xml
+      - sdk/boms/azure-sdk-template-bom/pom.xml
+      - sdk/boms/azure-spring-boot-bom/pom.xml
+      - sdk/boms/azure-spring-cloud-dependencies/pom.xml
 
 pr:
   branches:
@@ -20,6 +26,12 @@ pr:
   paths:
     include:
       - sdk/boms/
+    exclude:
+      - sdk/boms/pom.xml
+      - sdk/boms/azure-sdk-bom/pom.xml
+      - sdk/boms/azure-sdk-template-bom/pom.xml
+      - sdk/boms/azure-spring-boot-bom/pom.xml
+      - sdk/boms/azure-spring-cloud-dependencies/pom.xml
 
 extends:
   template: /eng/pipelines/templates/stages/archetype-sdk-pom-only.yml

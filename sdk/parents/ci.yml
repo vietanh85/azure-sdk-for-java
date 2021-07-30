@@ -9,6 +9,11 @@ trigger:
   paths:
     include:
       - sdk/parents/
+    exclude:
+      - sdk/parents/azure-arm-parent/pom.xml
+      - sdk/parents/azure-client-sdk-parent/pom.xml
+      - sdk/parents/azure-data-sdk-parent/pom.xml
+      - sdk/parents/azure-sdk-parent/pom.xml
 
 pr:
   branches:
@@ -20,6 +25,11 @@ pr:
   paths:
     include:
       - sdk/parents/
+    exclude:
+      - sdk/parents/azure-arm-parent/pom.xml
+      - sdk/parents/azure-client-sdk-parent/pom.xml
+      - sdk/parents/azure-data-sdk-parent/pom.xml
+      - sdk/parents/azure-sdk-parent/pom.xml
 
 extends:
   template: /eng/pipelines/templates/stages/archetype-sdk-pom-only.yml
