@@ -62,7 +62,10 @@ foreach ($sd in $serviceDirectories)
   $serviceDirectory = $sd.Name
   $includePath = "sdk/${serviceDirectory}/"
 
-  #if ($serviceDirectory -ne "keyvault") { continue }
+  if ($serviceDirectory -eq "core") {
+    Write-Host "Skipping core because it has unique triggers"
+    continue
+  }
 
   $ciYml = Join-Path $sd "ci.yml"
   $ciMgmtYml = Join-Path $sd "ci.mgmt.yml"

@@ -9,22 +9,12 @@ trigger:
   paths:
     include:
       - sdk/core/
+      - sdk/parents/azure-sdk-parent/
+      - sdk/parents/azure-client-sdk-parent/
+      - eng/
     exclude:
-      - sdk/core/pom.xml
-      - sdk/core/azure-core/pom.xml
-      - sdk/core/azure-core-amqp/pom.xml
-      - sdk/core/azure-core-amqp-experimental/pom.xml
-      - sdk/core/azure-core-experimental/pom.xml
-      - sdk/core/azure-core-http-jdk-httpclient/pom.xml
-      - sdk/core/azure-core-http-netty/pom.xml
-      - sdk/core/azure-core-http-okhttp/pom.xml
-      - sdk/core/azure-core-management/pom.xml
-      - sdk/core/azure-core-serializer-avro-apache/pom.xml
-      - sdk/core/azure-core-serializer-avro-jackson/pom.xml
-      - sdk/core/azure-core-serializer-json-gson/pom.xml
-      - sdk/core/azure-core-serializer-json-jackson/pom.xml
-      - sdk/core/azure-core-test/pom.xml
-      - sdk/core/azure-core-tracing-opentelemetry/pom.xml
+      - eng/versioning
+      - eng/jacoco-test-coverage
 
 pr:
   branches:
@@ -36,22 +26,12 @@ pr:
   paths:
     include:
       - sdk/core/
+      - sdk/parents/azure-sdk-parent/
+      - sdk/parents/azure-client-sdk-parent/
+      - eng/
     exclude:
-      - sdk/core/pom.xml
-      - sdk/core/azure-core/pom.xml
-      - sdk/core/azure-core-amqp/pom.xml
-      - sdk/core/azure-core-amqp-experimental/pom.xml
-      - sdk/core/azure-core-experimental/pom.xml
-      - sdk/core/azure-core-http-jdk-httpclient/pom.xml
-      - sdk/core/azure-core-http-netty/pom.xml
-      - sdk/core/azure-core-http-okhttp/pom.xml
-      - sdk/core/azure-core-management/pom.xml
-      - sdk/core/azure-core-serializer-avro-apache/pom.xml
-      - sdk/core/azure-core-serializer-avro-jackson/pom.xml
-      - sdk/core/azure-core-serializer-json-gson/pom.xml
-      - sdk/core/azure-core-serializer-json-jackson/pom.xml
-      - sdk/core/azure-core-test/pom.xml
-      - sdk/core/azure-core-tracing-opentelemetry/pom.xml
+      - eng/versioning
+      - eng/jacoco-test-coverage
 
 
 extends:
